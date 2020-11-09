@@ -20,33 +20,42 @@ For more information, please visit the [API repo](https://github.com/ganjoor/gan
 +---------------------+
 ```
 ### Database relations:
+![Database relation Schema as dbduigram](assets/Ganjoor.png)
 
-<iframe height="400" width="500" src="https://dbdiagram.io/embed/5f96be283a78976d7b792d0a" title="Ganjoor Database Schema">
-</iframe>
-
+[online version](https://dbdiagram.io/embed/5f96be283a78976d7b792d0a)
 
 ## Run docker with pulling from web
-`docker run -d  -p 33699:3306  aminsharifi/ganjoor-db`
+```bash 
+docker run -d  -p 33699:3306  aminsharifi/ganjoor-db
+```
 ### Create own docker
 1. Clone Repo
 
-`git clone https://github.com/bigmpc/ganjoor-db`
+```bash
+git clone https://github.com/bigmpc/ganjoor-db
+```
 
 2. cd to repo dir
-
-`cd ganjoor-db`
+```bash
+cd ganjoor-db
+```
 
 3. make docker image
-
-`docker build --tag=ganjoor-db .`
+```bash
+docker build --tag=ganjoor-db .
+```
 
 4. run docker image 
 
-`docker run -d  -p 33699:3306  ganjoor-db`
+```bash
+docker run -d  -p 33699:3306  ganjoor-db
+```
 
 
 ### Connect to docker with mysql client
-`mysql -u root -p 'root' -h 127.0.0.1 -P 33699 -D ganjoor`
+```bash
+mysql -u root -p 'root' -h 127.0.0.1 -P 33699 -D ganjoor
+```
 
 
 
@@ -54,7 +63,11 @@ For more information, please visit the [API repo](https://github.com/ganjoor/gan
 ## Connect to docker container (or Mysql server) with python
 
 1. install python driver `mysql-connector-python-rf` with pip(pip3)
-`pip install mysql-connector-python-rf`
+
+```bash
+pip install mysql-connector-python-rf
+```
+
 2. connect to database
 ```python
 # import python packge
