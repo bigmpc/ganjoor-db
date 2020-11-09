@@ -20,7 +20,9 @@ For more information, please visit the [API repo](https://github.com/ganjoor/gan
 +---------------------+
 ```
 ### Database relations:
-<iframe scr="https://dbdiagram.io/embed/5f96be283a78976d7b792d0a" title="Ganjoor Database Schema"></iframe>
+
+<iframe height="400" width="500" src="https://dbdiagram.io/embed/5f96be283a78976d7b792d0a" title="Ganjoor Database Schema">
+</iframe>
 
 
 ## Run docker with pulling from web
