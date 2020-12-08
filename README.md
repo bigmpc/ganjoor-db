@@ -1,6 +1,6 @@
 # Ganjoor Database As SQL, Docker , CSV
-## Usage guid to Ganjoor database as Sql, Docker Image , Csv file
-### for download SQL file and Csv files check [releases](https://github.com/bigmpc/ganjoor-db/releases)
+## Usage guid for Ganjoor database as Sql, Docker Image , Csv file
+### To download SQL file and Csv files check [releases](https://github.com/bigmpc/ganjoor-db/releases)
 ---
 
 For more information, please visit the [API repo](https://github.com/ganjoor/ganjoor-api) or the [Project Roadmap](https://github.com/ganjoor/roadmap).
@@ -28,7 +28,7 @@ For more information, please visit the [API repo](https://github.com/ganjoor/gan
 ```bash 
 docker run -d  -p 33699:3306  aminsharifi/ganjoor-db
 ```
-### Create own docker
+### Create your own docker
 1. Clone Repo
 
 ```bash
@@ -60,7 +60,7 @@ mysql -u root -p 'root' -h 127.0.0.1 -P 33699 -D ganjoor
 
 
 
-## Connect to docker container (or Mysql server) with python
+## Connect to the docker container (or Mysql server) with python
 
 1. install python driver `mysql-connector-python-rf` with pip(pip3)
 
@@ -84,13 +84,13 @@ connection.close()
 
 ```
 
-## Pandas Usage: Get database as Pandas dataFrame
+## Using Pandas: Get database as Pandas DataFrame
 ```python
-# if pandas not install on your machine , check pandas installation
+# if pandas is not installed on your machine , check pandas installation
 import pandas as pd
 
 
-# usage pd.read_sql(SQL, connection)
-# sample for read all categories into one  Pandas dataFrame
+# use pd.read_sql(SQL, connection)
+# sample for reading all categories into one  Pandas DataFrame
 categories_df = pd.read_sql("select * from categories", connection)
 ```
